@@ -4,7 +4,7 @@ const search = document.getElementById('search'),
   display = document.getElementById('display'),
   resultMessage = document.getElementById('result-message'),
   regex = /^\d{5}(?:[-\s]\d{4})?$/g,
-  apiUrl = `http://api.zippopotam.us/us/`;
+  apiUrl = `https://api.zippopotam.us/us/`;
 
 let apiData = null;
 
@@ -71,7 +71,7 @@ function populateCard(data) {
     resultMessage.innerHTML = `<p>This zip doesn't exist. Try again!</p>`;
     return;
   }
-  
+
   const {
     country,
     countryAbbreviation,
