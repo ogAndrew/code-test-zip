@@ -6,9 +6,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="pattern.css">
 </head>
 <body>
-	
+	<div class="search-container">
+		<h1 class="title">Zip Finder</h1>
+		<div class="flex">
+			<form class="flex" id="submit">
+				<input type="text" id="search" placeholder="Enter a zip code">
+				<button class="search-btn" type="submit">Search</button>
+			</form>
+		</div>
+		<div class="result-message" id="result-message"></div>
+	</div>
+	<div class="display" id="display"></div>
 	<script src="script.js"></script>
 </body>
 </html>
